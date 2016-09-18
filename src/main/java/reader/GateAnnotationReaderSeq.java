@@ -1,6 +1,18 @@
 package reader;
 
 
+import java.io.File;
+import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
+
 import gate.Annotation;
 import gate.AnnotationSet;
 import gate.Document;
@@ -9,21 +21,6 @@ import gate.FeatureMap;
 import gate.Gate;
 import gate.creole.ResourceInstantiationException;
 import gate.util.InvalidOffsetException;
-
-import java.io.File;
-import java.net.MalformedURLException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.Set;
-
-import com.google.common.collect.Lists;
-import com.google.common.collect.Sets;
 
 public class GateAnnotationReaderSeq {
 

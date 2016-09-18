@@ -1,4 +1,4 @@
-package reader;
+package converter;
 
 
 
@@ -10,15 +10,16 @@ import java.util.Map;
 import gate.Annotation;
 import gate.util.InvalidOffsetException;
 import ontology.TurtleFormatRDFWriter;
+import reader.GateAnnotationReader;
 
-public class LetterXMLReader {
+public class LetterXMLToRDFConverter {
 
 	//	private Properties config = new Properties();
 	private List<String> labelsToBeUsed = new ArrayList<String>();
 
 	private GateAnnotationReader gateAnnoReader = new GateAnnotationReader();
 
-	public LetterXMLReader() {
+	public LetterXMLToRDFConverter() {
 	}
 
 	//	private void loadConfig(String configFilePath){
@@ -85,7 +86,7 @@ public class LetterXMLReader {
 	public static void main(String[] args) {
 		String letterGateFile = "src/main/resources/MashamtoLeibniz1.xml";
 
-		LetterXMLReader reader = new LetterXMLReader();
+		LetterXMLToRDFConverter reader = new LetterXMLToRDFConverter();
 		reader.createTurtleFile(letterGateFile);		
 	}
 
