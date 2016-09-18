@@ -66,12 +66,14 @@ public class LetterXMLToRDFConverter {
 		
 		Map<String, List<Annotation>> annotations = gateAnnoReader.getGateAnnotationsLabelTagged(labelsToBeUsed, annotationSetName);
 		TurtleFormatRDFWriter turtle = new TurtleFormatRDFWriter();
+		String ontoUri = "http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent";
+		turtle.addBasePrefix(ontoUri);
 		for(String annoType : annotations.keySet()) {			
 			List<Annotation> annoTypeAnnotations = annotations.get(annoType);
 			for(Annotation annotation : annoTypeAnnotations) {				
 				try {
 					String content = gateAnnoReader.getDocument().getContent().getContent(annotation.getStartNode().getOffset(), annotation.getEndNode().getOffset()).toString();
-					String tag = annotation.getType();					
+					String tag = ":" + annotation.getType();					
 					turtle.addRDF(content, tag);
 				} catch (InvalidOffsetException e) {
 					e.printStackTrace();

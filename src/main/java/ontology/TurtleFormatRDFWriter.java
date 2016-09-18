@@ -47,6 +47,11 @@ public class TurtleFormatRDFWriter {
 		buffer.append("@prefix " +  prefix + ":" +  "<" + uri + "> . "  + "\n");					
 	}
 	
+	public void addBasePrefix(String uri){
+		buffer.append("@base " +  "<" + uri + "> . "  + "\n");					
+	}
+	
+	
 	public void addPrefixes(Map<String, String> prefixUriMap){
 		for(String prefix : prefixUriMap.keySet()){
 			String uri = prefixUriMap.get(prefix);

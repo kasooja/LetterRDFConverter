@@ -1,50 +1,51 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent> . 
 
 
 Perhaps my not being accustomâ€™d to such abstract speculations made me not well comprehend what you say there of Formes, upon which I think you build your Hypothesis: for (as it seemes to me) you sometimes call them Forces Primitives, sometimes des Ames sometimes Formes constitutives des substances, and sometimes substances themselves; but such yet as are neither Spirit, nor matter whence I confess I have no cleare Idea of what you call Formes
-a Argument;
+a :Argument;
 
 .
 
 
 
 Intellectual System
-a CitedWork;
+a :CitedWork;
 
 .
 
 
 
 Article of Rorarius
-a CitedWork;
+a :CitedWork;
 
 .
 
 
 
  first Edition of Mr. Bayls Dictionarie
-a CitedWork;
+a :CitedWork;
 
 .
 
 
 
 Journal des Savans 1695
-a CitedWork;
+a :CitedWork;
 
 .
 
 
 
  Discourse
-a CitedWork;
+a :CitedWork;
 
 .
 
 
 
  Intellectual System
-a CitedWork;
+a :CitedWork;
 
 .
 
@@ -54,14 +55,14 @@ Sr
 				your very Humble
 				Servant
 				Da. Msham.
-a Closing;
+a :Closing;
 
 .
 
 
 
 Mr. Locke whose company I am so Happy as to injoy in my Familie, desires me to present you his Humble service.
-a Closing;
+a :Closing;
 
 .
 
@@ -84,28 +85,28 @@ I have orderâ€™d my Fathers Discourse concerning the Lords Supper to be sen
 
 Mr. Locke whose company I am so Happy as to injoy in my Familie, desires me to present you his Humble service.
 
-a Letter;
+a :Letter;
 
 .
 
 
 
 March
-a Month;
+a :Month;
 
 .
 
 
 
 I take the libertie therefore to request the favour of you that you will by some explication or definition of them help me to conceive what your Formes are
-a IntellectualQuestion;
+a :IntellectualQuestion;
 
 .
 
 
 
 If you please to add in short the sum of your answers to Mr. Bayles objections in his second edition of his Dictionarie it will be an additional obligation in giveing me still further light into this matter.
-a IntellectualQuestion;
+a :IntellectualQuestion;
 
 .
 
@@ -113,7 +114,7 @@ a IntellectualQuestion;
 
 1704 
 Sr.
-a Year;
+a :Year;
 
 .
 
@@ -121,174 +122,174 @@ a Year;
 
 29 March 1704 
 Sr.
-a Opening;
+a :Opening;
 
 .
 
 
 
 learned men of Europe
-a Charactarisation;
+a :Charactarisation;
 
 .
 
 
 
 ignorant Woman
-a Charactarisation;
+a :Charactarisation;
 
 .
 
 
 
 learned man
-a Charactarisation;
+a :Charactarisation;
 
 .
 
 
 
 the most ignorant Lover of Truth
-a Charactarisation;
+a :Charactarisation;
 
 .
 
 
 
 29
-a Day;
+a :Day;
 
 .
 
 
 
 Mr. Bayls Dictionarie
-a Person;
+a :Person;
 
 .
 
 
 
 des Savans
-a Person;
+a :Person;
 
 .
 
 
 
 des
-a Person;
+a :Person;
 
 .
 
 
 
 des
-a Person;
+a :Person;
 
 .
 
 
 
 Mr. Bayles
-a Person;
+a :Person;
 
 .
 
 
 
 Dictionarie
-a Person;
+a :Person;
 
 .
 
 
 
 Mr. Locke
-a Person;
+a :Person;
 
 .
 
 
 
 Mr. Locke
-a Person;
+a :Person;
 
 .
 
 
 
 Formes
-a IntellectualConcept;
+a :IntellectualConcept;
 
 .
 
 
 
 Forces Primitives
-a IntellectualConcept;
+a :IntellectualConcept;
 
 .
 
 
 
 Ames
-a IntellectualConcept;
+a :IntellectualConcept;
 
 .
 
 
 
 Formes constitutives des substances
-a IntellectualConcept;
+a :IntellectualConcept;
 
 .
 
 
 
 substances
-a IntellectualConcept;
+a :IntellectualConcept;
 
 .
 
 
 
 Spirit
-a IntellectualConcept;
+a :IntellectualConcept;
 
 .
 
 
 
 matter
-a IntellectualConcept;
+a :IntellectualConcept;
 
 .
 
 
 
 Formes
-a IntellectualConcept;
+a :IntellectualConcept;
 
 .
 
 
 
 Truth
-a IntellectualConcept;
+a :IntellectualConcept;
 
 .
 
 
 
 Oates
-a Location;
+a :Location;
 
 .
 
 
 
 Europe
-a Location;
+a :Location;
 
 .
