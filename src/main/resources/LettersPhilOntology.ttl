@@ -1,0 +1,268 @@
+@prefix : <http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent> .
+
+<http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#arguesAbout
+:arguesAbout rdf:type owl:ObjectProperty ;
+             rdfs:domain :Person ;
+             rdfs:range :IntellectualConcept .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#cites
+:cites rdf:type owl:ObjectProperty ;
+       rdfs:domain :Person ;
+       rdfs:range :ReferenceWork .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#closes
+:closes rdf:type owl:ObjectProperty ;
+        rdfs:domain :Person ;
+        rdfs:range :Closing .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#correspondsWith
+:correspondsWith rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Person ;
+                 rdfs:range :Person .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#hasAddress
+:hasAddress rdf:type owl:ObjectProperty ;
+            rdfs:domain :Letter ;
+            rdfs:range :Location .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#hasReligion
+:hasReligion rdf:type owl:ObjectProperty ;
+             rdfs:domain :Person ;
+             rdfs:range :Religion .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#isInfluencedBy
+:isInfluencedBy rdf:type owl:ObjectProperty ;
+                rdfs:domain :Person ;
+                rdfs:range :IntellectualConcept .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#isSentTo
+:isSentTo rdf:type owl:ObjectProperty ;
+          rdfs:domain :Letter ;
+          rdfs:range :Person .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#isWrittenBy
+:isWrittenBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Letter ;
+             rdfs:range :Person .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#usesSalutation
+:usesSalutation rdf:type owl:ObjectProperty ;
+                rdfs:domain :Person ;
+                rdfs:range :Opening .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#datesAt
+:datesAt rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#hasEducation
+:hasEducation rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#hasSocialStatus
+:hasSocialStatus rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Address
+:Address rdf:type owl:Class ;
+         rdfs:subClassOf :Location .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Author
+:Author rdf:type owl:Class ;
+        rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Body
+:Body rdf:type owl:Class ;
+      rdfs:subClassOf :IntellectualConcept .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Book
+:Book rdf:type owl:Class ;
+      rdfs:subClassOf :ReferenceWork .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Closing
+:Closing rdf:type owl:Class ;
+         rdfs:subClassOf :Letter .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Correspondence
+:Correspondence rdf:type owl:Class ;
+                rdfs:comment "Communication by exchanging letters" .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Correspondent
+:Correspondent rdf:type owl:Class ;
+               rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Custom
+:Custom rdf:type owl:Class ;
+        rdfs:subClassOf :IntellectualConcept ;
+        rdfs:comment """p168 The Cambridge Platonist Henry More defines custom as “a corporeal Impression, by which the Soul is extremely bent to judge of things, as true, good, or amiable; for no other Motive, but because it has been accustomed so to judge, and so to act.”10 Though Astell occasionally equivocates, her use of the term “custom” generally accords with that of More. For Astell, custom inclines us to judge an action as right or wrong for no other reason than that such an action has been deemed right or wrong by long use and by the sanction of our forebears.11 Custom thus constitutes a powerful but potentially irrational influence on our judgments about how we should or should not act. In the second Proposal, Astell observes that most women are “so little improved” because of “Ill-nurture, Custom, loss of time, the want of retirement, or of not knowing how to use it, so that by the disuse of our Faculties we seem to have lost them if we ever had any[,] are sunk into an Animal life wholly taken up with sensible objects” (SP II 78).
+
+10 Henry More, An Account of Virtue: Or, Dr. Henry More’s Abridgment of Morals, Put into English, trans. Edward Southwell (Bristol, 1997), 87. Hereafter cited parenthetically as Virtue.
+
+11 On Astell’s use of “custom,” see Rebecca M. Mills, “ ‘That Tyrant Custom’: The Politics of Custom in the Poetry and Prose of Augustan Women Writers,” Women’s Writing 7.3 (2000): 391–409.
+
+Jacqueline Broad, ‘Astell, Cartesian Ethics, and the Critique of Custom’, in Mary Astell: Reason, Gender, Faith, edited by William Kolbrener and Michal Michelson (Aldershot: Ashgate, 2007), pp. 165- 179."""@en .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#GenderedAssociations
+:GenderedAssociations rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#God
+:God rdf:type owl:Class ;
+     rdfs:subClassOf :Theology .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#IntellectualConcept
+:IntellectualConcept rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Knowledge
+:Knowledge rdf:type owl:Class ;
+           rdfs:subClassOf :IntellectualConcept .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Letter
+:Letter rdf:type owl:Class ;
+        rdfs:subClassOf :Correspondence .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Location
+:Location rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Love
+:Love rdf:type owl:Class ;
+      rdfs:subClassOf :IntellectualConcept .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Materialism
+:Materialism rdf:type owl:Class ;
+             rdfs:subClassOf :IntellectualConcept .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Mentorship
+:Mentorship rdf:type owl:Class ;
+            rdfs:comment "The guidance provided by a mentor, especially an experienced person in a company or educational institution" .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Metaphor
+:Metaphor rdf:type owl:Class ;
+          rdfs:comment """Martin Alcoff, Linda (1996) \"Is the Feminist Critique of Reason Rational,\" Philosophic Exchange: Vol. 26: No. 1, Article 1. 
+
+p73. Neither science nor philosophy works entirely through logical entailments between factually based claims. Part of the way in which models and hypotheses are judged as worthy of experimental pursuit or philosophical plausibiliry involves coherence, analogy, and metaphor. And surely the most ubiquitous metaphor of all involves gender. Even in English, which does nor gender its nouns in the way that frenc h and spanish do, there are many gendered associations: mother earth, boats, ships and hurricanes are female , as is the sea, justice, and so on. And there are dozens ofcliche phrases in the academy such as ''the penetrating argument,\" \"the thrust ofan argument,\" a \"rigorous critique,\" \"erect adeferue,\"a\"seminalwork.\" ThesephrasesworkpreciselyinthewayLeDoeuffsuggescs in so faras they invoke unsupported premises that work to offer supporc forother premises in the text. Ifone is in doubt that phallocentrism exists, one need only read Saul Kripke, for whom the ulcimate, fixed, and essential meanings of words are always determined by what he calls \"rigid designators.\"""" .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Mind
+:Mind rdf:type owl:Class ;
+      rdfs:subClassOf :IntellectualConcept .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Networking
+:Networking rdf:type owl:Class ;
+            rdfs:comment "A group or system of interconnected people or things" .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Opening
+:Opening rdf:type owl:Class ;
+         rdfs:subClassOf :Letter .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Person
+:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Philosopher
+:Philosopher rdf:type owl:Class ;
+             rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Rationality
+:Rationality rdf:type owl:Class ;
+             rdfs:subClassOf :IntellectualConcept .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Reason
+:Reason rdf:type owl:Class ;
+        rdfs:subClassOf :IntellectualConcept .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Recipient
+:Recipient rdf:type owl:Class ;
+           rdfs:subClassOf :Correspondent .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#ReferenceWork
+:ReferenceWork rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Religion
+:Religion rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Revelation
+:Revelation rdf:type owl:Class ;
+            rdfs:subClassOf :Theology .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Sender
+:Sender rdf:type owl:Class ;
+        rdfs:subClassOf :Correspondent .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Substance
+:Substance rdf:type owl:Class ;
+           rdfs:subClassOf :IntellectualConcept .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Theologian
+:Theologian rdf:type owl:Class ;
+            rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Theology
+:Theology rdf:type owl:Class ;
+          rdfs:subClassOf :Religion .
+
+
+###  http://www.semanticweb.org/ioanna/ontologies/2016/5/Intelcorrespondent#Truth
+:Truth rdf:type owl:Class ;
+       rdfs:subClassOf :IntellectualConcept .
+
+
+###  Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

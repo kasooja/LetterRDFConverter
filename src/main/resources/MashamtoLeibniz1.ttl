@@ -8,6 +8,125 @@ a Argument;
 
 
 
+Intellectual System
+a CitedWork;
+
+.
+
+
+
+Article of Rorarius
+a CitedWork;
+
+.
+
+
+
+ first Edition of Mr. Bayls Dictionarie
+a CitedWork;
+
+.
+
+
+
+Journal des Savans 1695
+a CitedWork;
+
+.
+
+
+
+ Discourse
+a CitedWork;
+
+.
+
+
+
+ Intellectual System
+a CitedWork;
+
+.
+
+
+
+Sr
+				your very Humble
+				Servant
+				Da. Msham.
+a Closing;
+
+.
+
+
+
+Mr. Locke whose company I am so Happy as to injoy in my Familie, desires me to present you his Humble service.
+a Closing;
+
+.
+
+
+
+Oates 29 March 1704 
+Sr.
+	Tho I am not in the number of those who can confirm the advantageous Idea you have of English ladys yet I have been too much conversant amongst learned men not to have contracted (so far as I am capable of it) a just value for them, or to have been ignorant of the rank you hold in the commonwealth of letters. This has disposâ€™d me long since to entertain with pleasure any occasion of testifying a great respect for you, and has lately suggested to me that my fathers Intellectual System might possibly not be unacceptable to you. The esteem you express for that work pleases me very much both on this account, and also as it is a new confirmation to me of the worth of that performance. 
+
+I should be glad to have a farther view into the intellectual world; and would therefore willingly have right conceptions of the system you propose. To this purpose upon the receit of your obliging letter, I looked into the Article of Rorarius in the first Edition of Mr. Bayls Dictionarie (not haveing the 2d by me) and being by his quotation of you there, directed to the Journal des Savans 1695, I read what is there published of it. Perhaps my not being accustomâ€™d to such abstract speculations made me not well comprehend what you say there of Formes, upon which I think you build your Hypothesis: for (as it seemes to me) you sometimes call them Forces Primitives, sometimes des Ames sometimes Formes constitutives des substances, and sometimes substances themselves; but such yet as are neither Spirit, nor matter whence I confess I have no cleare Idea of what you call Formes.
+
+	That a man whose correspondence is so highly esteemâ€™d as yours by all the learned men of Europe should employ any of his valuable moments in the instruction of an ignorant Woman is what I should not perhaps presume to importune you for, if your character was known to me onely as a learned man; for those who are far advanced in learned studies, and high speculations may think themselves excusâ€™d from such a Condescention, but you I am confident would not contemne the most ignorant Lover of Truth; were I not securâ€™d by my sex of a favorable distinction from the obligeing civilitie of a man conversant in courts. I take the libertie therefore to request the favour of you that you will by some explication or definition of them help me to conceive what your Formes are; for I cannot but desire to understand a systeme recommended to me not onely by the eminence of its Author, but particularly also as tending to in large our Idea of the Divine Perfections and the beautie of his Works. If you please to add in short the sum of your answers to Mr. Bayles objections in his second edition of his Dictionarie it will be an additional obligation in giveing me still further light into this matter.
+
+I have orderâ€™d my Fathers Discourse concerning the Lords Supper to be sent you together with his Intellectual System in the same Vol: the value you express for the Author makes me think you will not dislike to look into any thing of his and tho this treatise was writ when he was a young man, yet it was highly commended by our Famous Selden. You will much oblige me in accepting of this Book as from one who is with great Esteem and Respect
+
+				Sr
+				your very Humble
+				Servant
+				Da. Msham.
+
+Mr. Locke whose company I am so Happy as to injoy in my Familie, desires me to present you his Humble service.
+
+a Letter;
+
+.
+
+
+
+March
+a Month;
+
+.
+
+
+
+I take the libertie therefore to request the favour of you that you will by some explication or definition of them help me to conceive what your Formes are
+a IntellectualQuestion;
+
+.
+
+
+
+If you please to add in short the sum of your answers to Mr. Bayles objections in his second edition of his Dictionarie it will be an additional obligation in giveing me still further light into this matter.
+a IntellectualQuestion;
+
+.
+
+
+
+1704 
+Sr.
+a Year;
+
+.
+
+
+
+29 March 1704 
+Sr.
+a Opening;
+
+.
+
+
+
 learned men of Europe
 a Charactarisation;
 
@@ -31,5 +150,145 @@ a Charactarisation;
 
 the most ignorant Lover of Truth
 a Charactarisation;
+
+.
+
+
+
+29
+a Day;
+
+.
+
+
+
+Mr. Bayls Dictionarie
+a Person;
+
+.
+
+
+
+des Savans
+a Person;
+
+.
+
+
+
+des
+a Person;
+
+.
+
+
+
+des
+a Person;
+
+.
+
+
+
+Mr. Bayles
+a Person;
+
+.
+
+
+
+Dictionarie
+a Person;
+
+.
+
+
+
+Mr. Locke
+a Person;
+
+.
+
+
+
+Mr. Locke
+a Person;
+
+.
+
+
+
+Formes
+a IntellectualConcept;
+
+.
+
+
+
+Forces Primitives
+a IntellectualConcept;
+
+.
+
+
+
+Ames
+a IntellectualConcept;
+
+.
+
+
+
+Formes constitutives des substances
+a IntellectualConcept;
+
+.
+
+
+
+substances
+a IntellectualConcept;
+
+.
+
+
+
+Spirit
+a IntellectualConcept;
+
+.
+
+
+
+matter
+a IntellectualConcept;
+
+.
+
+
+
+Formes
+a IntellectualConcept;
+
+.
+
+
+
+Truth
+a IntellectualConcept;
+
+.
+
+
+
+Oates
+a Location;
+
+.
+
+
+
+Europe
+a Location;
 
 .

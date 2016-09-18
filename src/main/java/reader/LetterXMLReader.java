@@ -54,7 +54,15 @@ public class LetterXMLReader {
 		gateAnnoReader.setDocument(annotatedGateFile);
 		labelsToBeUsed = new ArrayList<String>();
 		labelsToBeUsed.add("Argument");
-		labelsToBeUsed.add("Charactarisation");		
+		labelsToBeUsed.add("Charactarisation");	
+		labelsToBeUsed.add("CitedWork");
+		labelsToBeUsed.add("Closing");	
+		labelsToBeUsed.add("Day");	labelsToBeUsed.add("Exchange");	
+		labelsToBeUsed.add("IntellectualConcept");	labelsToBeUsed.add("IntellectualQuestion");
+		labelsToBeUsed.add("Letter");	labelsToBeUsed.add("Location");	
+		labelsToBeUsed.add("Month");	labelsToBeUsed.add("Opening");	
+		labelsToBeUsed.add("Person");	labelsToBeUsed.add("Year");
+		
 		Map<String, List<Annotation>> annotations = gateAnnoReader.getGateAnnotationsLabelTagged(labelsToBeUsed, annotationSetName);
 		TurtleFormatRDFWriter turtle = new TurtleFormatRDFWriter();
 		for(String annoType : annotations.keySet()) {			
